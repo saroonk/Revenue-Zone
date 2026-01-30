@@ -1,0 +1,188 @@
+/* About Us Page Specific Styles */
+
+/* About Hero Section */
+.about-hero {
+    margin-top: 80px;
+    position: relative;
+    height: 50vh;
+    /* Shorter than index hero */
+    min-height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1920');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about-hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 20px;
+    position: relative;
+}
+
+/* Responsive Separators */
+@media (min-width: 768px) {
+
+    /* Vertical line on the right for desktop, excluding the last item */
+    .col-md-4:not(:last-child) .stat-item::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 20%;
+        /* Center vertically */
+        height: 60%;
+        width: 1px;
+        background-color: #dee2e6;
+        /* Bootstrap border color */
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Horizontal line on the bottom for mobile, excluding the last item */
+    .col-md-4:not(:last-child) .stat-item::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        /* Center horizontally */
+        width: 60%;
+        height: 1px;
+        background-color: #dee2e6;
+    }
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--brand-green);
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    font-weight: 600;
+}
+
+/* Customer Feedback (Owl Carousel) */
+.feedback-section {
+    padding: 100px 0;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.feedback-card {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feedback-text {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.client-info h5 {
+    font-weight: 700;
+    margin: 0;
+    color: #333;
+}
+
+.client-info span {
+    font-size: 0.9rem;
+    color: var(--brand-green);
+}
+
+/* Team Section */
+.team-section {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.team-card {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.team-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.team-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+    filter: none;
+    /* Normal by default */
+}
+
+/* Grayscale on Hover Effect */
+.team-img-wrapper:hover .team-img {
+    filter: grayscale(100%);
+    transform: scale(1.05);
+    /* Subtle zoom */
+}
+
+.team-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.team-designation {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
