@@ -15,6 +15,23 @@ body {
     overflow-x: hidden;
 }
 
+/* Logo Styling */
+/* Logo Styling */
+.navbar-brand img {
+    height: 100px;
+    /* Larger Desktop Size */
+    width: auto;
+    display: block;
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand img {
+        height: 70px;
+        /* Mobile Optimization */
+    }
+}
+
 h1,
 h2,
 h3,
@@ -39,7 +56,23 @@ h6,
     /* Initial large padding */
     transition: padding 0.3s ease;
     /* Smooth shrink effect */
+    /* Smooth shrink effect */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Button (Get Started) - Brand Green Override */
+#mainNav .btn-primary {
+    background-color: #6dad35;
+    /* Brand Green */
+    border-color: #6dad35;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#mainNav .btn-primary:hover {
+    background-color: #fff;
+    color: #6dad35;
+    border-color: #fff;
 }
 
 /* 2. Desktop Scrolled State */
@@ -132,6 +165,7 @@ h6,
     width: 100%;
     overflow: hidden;
     background-color: #000;
+    padding-top: 100px;
 }
 
 .carousel-item {
@@ -542,8 +576,8 @@ h6,
 }
 
 .cta-box {
-    background: linear-gradient(135deg, #050544 0%, #0a0a5e 100%);
-    /* Deep Blue Gradient */
+    background: linear-gradient(135deg, #6dad35 0%, #4a8a1a 100%);
+    /* Brand Green Gradient */
     padding: 50px 30px;
     border-radius: 30px;
     text-align: center;
@@ -552,7 +586,7 @@ h6,
     position: relative;
     overflow: hidden;
     color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .cta-box::before {
@@ -562,7 +596,7 @@ h6,
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%);
     pointer-events: none;
 }
 
@@ -580,7 +614,7 @@ h6,
     font-size: 1.25rem;
     /* Larger text */
     font-weight: 300;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 40px;
     max-width: 700px;
     margin-left: auto;
@@ -589,7 +623,9 @@ h6,
 
 .btn-cta-premium {
     background-color: #fff;
-    color: #050544;
+    /* White Button */
+    color: #6dad35;
+    /* Green Text */
     font-size: clamp(0.9rem, 2vw, 1.1rem);
     font-weight: 700;
     text-transform: uppercase;
@@ -599,15 +635,15 @@ h6,
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     border: none;
 }
 
 .btn-cta-premium:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    background-color: var(--brand-green);
-    color: #fff;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    background-color: #f8f9fa;
+    color: #6dad35;
 }
 
 /* Footer (Updated) */
