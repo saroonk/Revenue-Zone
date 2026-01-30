@@ -7,9 +7,10 @@
     height: 50vh;
     /* Matched to About Hero */
     min-height: 500px;
+    min-height: 500px;
     /* Matched to About Hero */
-    background-image: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=1920');
-    /* New Contact BG */
+    background-image: url('../images/contact-hero.jpg');
+    /* Local Contact BG */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

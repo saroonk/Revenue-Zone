@@ -18,22 +18,38 @@ body {
     max-width: 100%;
 }
 
+
 /* Logo Styling */
 /* Logo Styling */
+
+
+
+
+
+
+
+
 .navbar-brand img {
     height: 100px;
-    /* Larger Desktop Size */
     width: auto;
     display: block;
-    transition: height 0.3s ease;
 }
 
+/* Mobile: HARD LOCK, NO ANIMATION */
 @media (max-width: 991px) {
     .navbar-brand img {
         height: 70px;
-        /* Mobile Optimization */
+        transition: none !important;
+    }
+     .navbar-brand {
+        flex-shrink: 0;
     }
 }
+
+
+
+
+
 
 h1,
 h2,
@@ -99,8 +115,49 @@ h6,
     /* Shrink to 15px */
 }
 
-/* 3. Mobile/Tablet State (Strictly Static & Fixed) */
+
+
+
+
+
+
+
+
+
+
+
+/* Remove Bootstrap blue focus & active styles */
+.navbar .nav-link:focus,
+.navbar .nav-link:focus-visible,
+.navbar .nav-link:active,
+.navbar .nav-item.show > .nav-link,
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:active {
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+/* Remove blue focus ring from hamburger */
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 991px) {
+
+
+    
 
     .navbar,
     .navbar.scrolled {
@@ -166,12 +223,20 @@ h6,
         padding-bottom: 20px;
     }
 
-    .nav-link {
-        padding: 10px 0 !important;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-        /* Light border */
-        color: #333 !important;
-        /* Dark Text */
+
+
+
+
+     .navbar-nav .dropdown-menu {
+        position: static !important;
+        width: 100%;
+        transform: none !important;
+    }
+
+    /* Lock Services link position */
+    .navbar-nav .dropdown-toggle {
+        width: 100%;
+        padding-left: 0 !important;
     }
 }
 
@@ -214,6 +279,26 @@ h6,
         animation: fadeIn 0.3s ease;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes fadeIn {
     from {
