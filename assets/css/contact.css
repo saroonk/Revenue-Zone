@@ -1,0 +1,157 @@
+/* Contact Page Specific Styles */
+
+/* Contact Hero Section */
+.contact-hero {
+    margin-top: 80px;
+    position: relative;
+    height: 50vh;
+    /* Matched to About Hero */
+    min-height: 500px;
+    /* Matched to About Hero */
+    background-image: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&q=80&w=1920');
+    /* New Contact BG */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* Contact Info Cards */
+.contact-info-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-card {
+    background: #fff;
+    padding: 40px 30px;
+    height: 100%;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    border-color: var(--brand-green);
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--brand-green);
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.contact-card h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-card p,
+.contact-card a {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-card a:hover {
+    color: var(--brand-green);
+}
+
+/* Form Section */
+.contact-form-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.contact-form-wrapper {
+    background: #fff;
+    padding: 20px;
+}
+
+/* Custom Floating Labels / Inputs */
+.form-control {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: var(--brand-green);
+    box-shadow: none;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn-submit {
+    background-color: var(--brand-green);
+    color: #fff;
+    padding: 15px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0a0a0a;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Section */
+.map-section {
+    height: 400px;
+    width: 100%;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

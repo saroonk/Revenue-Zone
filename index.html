@@ -25,7 +25,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.png" alt="Revenue Zone" height="50">
@@ -37,11 +37,21 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">OTA Revenue Management</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Marketing & Online Strategy</a></li>
+                            <li><a class="dropdown-item" href="#">Free Consultation</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a href="#contact" class="btn btn-primary rounded-0 fw-bold px-4">GET STARTED</a>
+                        <a href="contact.html" class="btn btn-primary rounded-0 fw-bold px-4">GET STARTED</a>
                     </li>
                 </ul>
             </div>
@@ -144,28 +154,32 @@
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="feature-card p-4">
+                                <i class="bi bi-bar-chart-line feature-icon d-block mb-3"></i>
+                                <h5 class="fw-bold text-uppercase">OTA Revenue Management</h5>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="feature-card p-4">
                                 <i class="bi bi-megaphone feature-icon d-block mb-3"></i>
-                                <h5 class="fw-bold text-uppercase">Social Media Marketing</h5>
+                                <h5 class="fw-bold text-uppercase">Digital Marketing</h5>
                             </div>
                         </div>
+
                         <div class="col-md-6">
                             <div class="feature-card p-4">
-                                <i class="bi bi-graph-up-arrow feature-icon d-block mb-3"></i>
-                                <h5 class="fw-bold text-uppercase">Market Analysis</h5>
+                                <i class="bi bi-diagram-3 feature-icon d-block mb-3"></i>
+                                <h5 class="fw-bold text-uppercase">Online Strategy</h5>
                             </div>
                         </div>
+
                         <div class="col-md-6">
                             <div class="feature-card p-4">
-                                <i class="bi bi-code-slash feature-icon d-block mb-3"></i>
-                                <h5 class="fw-bold text-uppercase">Web Development</h5>
+                                <i class="bi bi-chat-dots feature-icon d-block mb-3"></i>
+                                <h5 class="fw-bold text-uppercase">Free Consultation</h5>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="feature-card p-4">
-                                <i class="bi bi-lightbulb feature-icon d-block mb-3"></i>
-                                <h5 class="fw-bold text-uppercase">Content Strategy</h5>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -256,31 +270,31 @@
                 <div class="col-lg-8">
                     <div class="progress-clean-wrapper">
                         <div class="progress-clean-label">
-                            <span>Marketing Strategy</span>
-                            <span>95%</span>
+                            <span>OTA Revenue Management</span>
+                            <span>100%</span>
                         </div>
                         <div class="progress progress-clean">
-                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 95%"></div>
+                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 100%"></div>
                         </div>
                     </div>
 
                     <div class="progress-clean-wrapper">
                         <div class="progress-clean-label">
-                            <span>Brand Identity</span>
-                            <span>90%</span>
+                            <span>Digital Marketing & Online Strategy</span>
+                            <span>100%</span>
                         </div>
                         <div class="progress progress-clean">
-                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 90%"></div>
+                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 100%"></div>
                         </div>
                     </div>
 
                     <div class="progress-clean-wrapper">
                         <div class="progress-clean-label">
-                            <span>Web Development</span>
-                            <span>98%</span>
+                            <span>Free Consultation</span>
+                            <span>100%</span>
                         </div>
                         <div class="progress progress-clean">
-                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 98%"></div>
+                            <div class="progress-bar progress-clean-bar" role="progressbar" style="width: 100%"></div>
                         </div>
                     </div>
                 </div>
@@ -292,9 +306,9 @@
     <section class="parallax-section text-center animate-on-scroll">
         <div class="parallax-overlay"></div>
         <div class="container parallax-content">
-            <h2 class="quote-text-clean mb-4">"Great things in business are never done by one person. They're done by a
-                team of people."</h2>
-            <p class="text-uppercase text-white-50 letter-spacing-2 ls-2">Steve Jobs</p>
+            <h2 class="quote-text-clean mb-4">"Big ideas need more than one mind.
+                Teamwork is what brings them to life."</h2>
+            <!-- <p class="text-uppercase text-white-50 letter-spacing-2 ls-2">Steve Jobs</p> -->
         </div>
     </section>
 
@@ -333,11 +347,19 @@
                             <div class="tab-content-box">
                                 <i class="bi bi-rocket-takeoff tab-icon"></i>
                                 <h3 class="tab-title">Fueling Your Growth</h3>
+                                <p class="tab-text mb-3">
+                                    At Revenue Zone, our mission is simple yet powerful: to extend the benefits of OTA
+                                    Management services and Digital Marketing expertise to all hotels, resorts, and
+                                    accommodations across Kerala. As Kerala’s tourism industry grows, especially in
+                                    heritage centres and local tourism hubs, many property owners are still unaware of
+                                    how to manage their online presence effectively.
+                                </p>
                                 <p class="tab-text">
-                                    Our mission is to empower businesses with cutting-edge digital strategies that drive
-                                    measurable growth. We believe in creating sustainable value through innovation,
-                                    dedication,
-                                    and a relentless pursuit of excellence.
+                                    The Kerala Government's tourism promotion initiatives are opening new doors for the
+                                    tourism industry, and we are here to guide property owners on how to take full
+                                    advantage of these opportunities. With the right OTA management strategy, every
+                                    hotel and resort – no matter how big or small – can thrive in today’s digital
+                                    marketplace.
                                 </p>
                             </div>
                         </div>
@@ -418,7 +440,7 @@
     </section>
 
     <!-- CTA Section (Professional Boxed) -->
-    <section class="cta-section-premium animate-on-scroll">
+    <section class="cta-section-premium ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-9">
@@ -440,8 +462,9 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold text-white fs-3 d-block mb-4" href="#">
-                        DIGITAL<span class="text-brand-green">FACTORY</span>
+                    <a class="navbar-brand d-block mb-4" href="index.html">
+                        <img src="assets/images/footer-logo.jpg" alt="Revenue Zone"
+                            style="max-height: 80px; width: auto;">
                     </a>
                     <p class="mb-4">
                         A full-service digital marketing agency. We help brands grow, scale, and succeed in the digital
@@ -456,18 +479,18 @@
                 </div>
                 <div class="col-lg-2">
                     <h5>Links</h5>
-                    <a href="#" class="footer-link">Home</a>
-                    <a href="#" class="footer-link">About Us</a>
-                    <a href="#" class="footer-link">Services</a>
-                    <a href="#" class="footer-link">Portfolio</a>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="aboutus.html" class="footer-link">About Us</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#portfolio" class="footer-link">Portfolio</a>
                 </div>
                 <div class="col-lg-3">
                     <h5>Services</h5>
-                    <a href="#" class="footer-link">Digital Strategy</a>
-                    <a href="#" class="footer-link">Content Marketing</a>
-                    <a href="#" class="footer-link">Social Media</a>
-                    <a href="#" class="footer-link">Web Design</a>
+                    <a href="#" class="footer-link">OTA Revenue Management</a>
+                    <a href="#" class="footer-link">Digital Marketing & Online Strategy</a>
+                    <a href="#" class="footer-link">Free Consultation</a>
                 </div>
+
                 <div class="col-lg-3">
                     <h5>Contact</h5>
                     <p class="mb-2"><i class="bi bi-geo-alt me-2 text-brand-green"></i> 123 Business Street, Tech City

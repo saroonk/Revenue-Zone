@@ -32,7 +32,7 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" alt="Revenue Zone" height="50">
@@ -44,11 +44,21 @@
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">OTA Revenue Management</a></li>
+                            <li><a class="dropdown-item" href="#">Digital Marketing & Online Strategy</a></li>
+                            <li><a class="dropdown-item" href="#">Free Consultation</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item ms-lg-3">
-                        <a href="#contact" class="btn btn-primary rounded-0 fw-bold px-4">GET STARTED</a>
+                        <a href="contact.html" class="btn btn-primary rounded-0 fw-bold px-4">GET STARTED</a>
                     </li>
                 </ul>
             </div>
@@ -209,9 +219,9 @@
     <section class="parallax-section text-center animate-on-scroll">
         <div class="parallax-overlay"></div>
         <div class="container parallax-content">
-            <h2 class="quote-text-clean mb-4">"Great things in business are never done by one person. They're done by a
-                team of people."</h2>
-            <p class="text-uppercase text-white-50 letter-spacing-2 ls-2">Steve Jobs</p>
+            <h2 class="quote-text-clean mb-4">"Big ideas need more than one mind.
+                Teamwork is what brings them to life."</h2>
+            <!-- <p class="text-uppercase text-white-50 letter-spacing-2 ls-2">Steve Jobs</p> -->
         </div>
     </section>
 
@@ -410,7 +420,7 @@
 
     <!-- Final CTA Section -->
     <!-- Final CTA Section -->
-    <section class="cta-section-premium animate-on-scroll">
+    <section class="cta-section-premium ">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-9">
@@ -431,8 +441,9 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold text-white fs-3 d-block mb-4" href="index.html">
-                        DIGITAL<span class="text-brand-green">FACTORY</span>
+                    <a class="navbar-brand d-block mb-4" href="index.html">
+                        <img src="assets/images/footer-logo.jpg" alt="Revenue Zone"
+                            style="max-height: 80px; width: auto;">
                     </a>
                     <p class="mb-4">
                         A full-service digital marketing agency. We help brands grow, scale, and succeed in the digital
@@ -449,16 +460,16 @@
                     <h5>Links</h5>
                     <a href="index.html" class="footer-link">Home</a>
                     <a href="aboutus.html" class="footer-link">About Us</a>
-                    <a href="#services" class="footer-link">Services</a>
-                    <a href="#portfolio" class="footer-link">Portfolio</a>
+                    <a href="index.html#features" class="footer-link">Services</a>
+                    <a href="index.html#portfolio" class="footer-link">Portfolio</a>
                 </div>
                 <div class="col-lg-3">
                     <h5>Services</h5>
-                    <a href="#" class="footer-link">Digital Strategy</a>
-                    <a href="#" class="footer-link">Content Marketing</a>
-                    <a href="#" class="footer-link">Social Media</a>
-                    <a href="#" class="footer-link">Web Design</a>
+                    <a href="#" class="footer-link">OTA Revenue Management</a>
+                    <a href="#" class="footer-link">Digital Marketing & Online Strategy</a>
+                    <a href="#" class="footer-link">Free Consultation</a>
                 </div>
+
                 <div class="col-lg-3">
                     <h5>Contact</h5>
                     <p class="mb-2"><i class="bi bi-geo-alt me-2 text-brand-green"></i> 123 Business Street, Tech City
