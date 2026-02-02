@@ -20,3 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+
+
+document.addEventListener("click", function (event) {
+    const navbar = document.getElementById("navbarNav");
+    const toggler = document.querySelector(".navbar-toggler");
+
+    // If navbar is open
+    if (navbar.classList.contains("show")) {
+
+        // If click is outside navbar & toggler
+        if (!navbar.contains(event.target) && !toggler.contains(event.target)) {
+            toggler.click(); // close navbar
+        }
+    }
+});
