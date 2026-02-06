@@ -1,9 +1,8 @@
 :root {
-    --primary-color: #0d6efd;
+    --primary-color: #0d4393;
     --secondary-color: #6c757d;
     --dark-bg: #0a0a0a;
-    --brand-green: #6dad35;
-    /* Olive/Lime Green */
+    --brand-green: #4b7a22;
     --brand-blue: #0056b3;
     --light-text: #f8f9fa;
     --hero-transition: 1s ease-in-out;
@@ -977,7 +976,7 @@ h6,
      align-items: center;
      justify-content: space-around;
      min-width: 100%;
-     animation: scroll-left-to-right 10s linear infinite;
+     animation: scroll-left-to-right 15s linear infinite;
  }
 
  /* Hover to stop */
@@ -994,15 +993,15 @@ h6,
  }
 
  .marquee-item img {
-     max-height: 70px;
+     max-height: 50px;
      width: auto;
-     filter: grayscale(100%);
-     opacity: 0.7;
+     filter: grayscale(0%);
+     opacity: 1;
      transition: all 0.3s ease;
  }
 
  .marquee-item:hover img {
-     filter: grayscale(0%);
+     filter: grayscale(50%);
      opacity: 1;
      transform: scale(1.1);
  }
@@ -1036,7 +1035,7 @@ h6,
      }
 
      .marquee-content {
-         animation-duration: 10s;
+         animation-duration: 20s;
      }
  }
 
