@@ -86,8 +86,8 @@
 
 .stat-number {
     font-size: 3rem;
-    font-weight: 800;
-    color: var(--brand-green);
+    font-weight: 900 !important;
+    color: var(--brand-blue);
     margin-bottom: 10px;
     line-height: 1;
 }
@@ -185,4 +185,11 @@
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+
+
+
+.icon-container .text-primary {
+    color: var(--brand-blue) !important;
 }
