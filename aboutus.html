@@ -28,6 +28,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/aboutus.css">
 
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 
 </head>
 
@@ -370,6 +373,96 @@
         </div>
     </section>
 
+
+
+
+    <!-- Company Space Section -->
+    <section class="company-space-section py-5 animate-on-scroll">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-brand-green fw-bold text-uppercase mb-2">Our Workspace</h5>
+                <h2 class="display-5 fw-bold text-uppercase">Company Space</h2>
+                <div style="width: 60px; height: 3px; background: var(--brand-green); margin: 0 auto;"></div>
+            </div>
+
+            <div class="space-gallery-grid">
+                <a href="assets/images/space/20260112_081443.jpg.jpeg"
+                    class="gallery-item large" data-fancybox="gallery">
+                    <img src="assets/images/space/20260112_081443.jpg.jpeg"
+                        alt="Office Entrance">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="assets/images/space/20260112_081541.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery">
+                    <img src="assets/images/space/20260112_081541.jpg.jpeg"
+                        alt="Office Workspace">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="assets/images/space/20260112_081553.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery">
+                    <img src="assets/images/space/20260112_081553.jpg.jpeg"
+                        alt="Meeting Area">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="assets/images/space/20260112_081636.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery">
+                    <img src="assets/images/space/20260112_081636.jpg.jpeg"
+                        alt="Creative Zone">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+                <a href="assets/images/space/20260112_081658.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery" >
+                    <img src="assets/images/space/20260112_081658.jpg.jpeg"
+                        alt="Relaxation Area">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+
+
+
+                                <a href="assets/images/space/20260112_081753.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery" >
+                    <img src="assets/images/space/20260112_081753.jpg.jpeg"
+                        alt="Relaxation Area">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+
+
+
+                                <a href="assets/images/space/20260112_081926.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery" >
+                    <img src="assets/images/space/20260112_081926.jpg.jpeg"
+                        alt="Relaxation Area">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+
+
+
+                                <a href="assets/images/space/20260112_082306.jpg.jpeg"
+                    class="gallery-item" data-fancybox="gallery" >
+                    <img src="assets/images/space/20260112_082306.jpg.jpeg"
+                        alt="Relaxation Area">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Meet The Expert Team -->
     <section class="team-section">
         <div class="container">
@@ -512,6 +605,9 @@
     <script src="assets/js/main.js"></script>
 
     <!-- Page Specific Script -->
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
     <script>
         $(document).ready(function () {
             // Navbar Scroll Effect (Same as main.js)
@@ -539,6 +635,11 @@
                         items: 3
                     }
                 }
+            });
+
+            // Initialize Fancybox
+            Fancybox.bind("[data-fancybox]", {
+                // Your custom options
             });
         });
     </script>
