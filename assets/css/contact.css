@@ -5,12 +5,8 @@
     margin-top: 80px;
     position: relative;
     height: 50vh;
-    /* Matched to About Hero */
     min-height: 500px;
-    min-height: 500px;
-    /* Matched to About Hero */
     background-image: url('../images/contact-hero.jpg');
-    /* Local Contact BG */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,6 +15,14 @@
     justify-content: center;
     color: #fff;
     text-align: center;
+}
+
+@media (max-width: 991px) {
+    .contact-hero {
+        background-attachment: scroll;
+        background-position: center bottom;
+        min-height: 400px;
+    }
 }
 
 .contact-hero-overlay {

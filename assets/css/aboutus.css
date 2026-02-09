@@ -7,7 +7,7 @@
     height: 50vh;
     /* Shorter than index hero */
     min-height: 500px;
-    background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1920');
+    background-image: url('../images/about-hero.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -16,6 +16,17 @@
     justify-content: center;
     color: #fff;
     text-align: center;
+}
+
+@media (max-width: 991px) {
+    .about-hero {
+        background-attachment: scroll;
+        /* Fix for mobile/laptop background issues */
+        background-position: center bottom;
+        /* Better framing for portrait images if needed */
+        min-height: 400px;
+        /* Slightly shorter on mobile */
+    }
 }
 
 .about-hero-overlay {
